@@ -28,11 +28,6 @@ namespace _02_Laboratory_Exercise_1
 
         }
 
-        private void QueuingForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         public class CashierClass //Create Cashier Class
         {
             private int x;

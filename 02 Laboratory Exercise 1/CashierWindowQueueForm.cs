@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static _02_Laboratory_Exercise_1.QueuingForm;
 
 namespace _02_Laboratory_Exercise_1
 {
@@ -44,6 +46,11 @@ namespace _02_Laboratory_Exercise_1
         private void timer1_Tick(object sender, EventArgs e) //After the interval, this method will be called
         {
             DisplayCashierQueue(QueuingForm.CashierClass.CashierQueue);
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            CashierClass.CashierQueue.Dequeue();
         }
     }
 }
