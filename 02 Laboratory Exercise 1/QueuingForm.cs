@@ -14,10 +14,13 @@ namespace _02_Laboratory_Exercise_1
     public partial class QueuingForm : Form
     {
         CashierClass cashier;
+        CashierWindowQueueForm cashierWindowQueueForm;
         public QueuingForm()
         {
             InitializeComponent();
             cashier = new CashierClass();
+            cashierWindowQueueForm = new CashierWindowQueueForm();
+            cashierWindowQueueForm.Show(); //Show the CashierWindowQueueForm when the QueuingForm is initialized
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -55,6 +58,7 @@ namespace _02_Laboratory_Exercise_1
             lblQueue.Text = cashier.CashierGeneratedNumber("P - "); 
             CashierClass.getNumberInQueue = lblQueue.Text; 
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
+
         }
     }
 }

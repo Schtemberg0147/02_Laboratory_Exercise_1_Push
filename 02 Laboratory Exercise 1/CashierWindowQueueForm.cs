@@ -16,6 +16,7 @@ namespace _02_Laboratory_Exercise_1
         public CashierWindowQueueForm()
         {
             InitializeComponent();
+            AutoRefresh();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -32,5 +33,17 @@ namespace _02_Laboratory_Exercise_1
             }
         }
 
+        private void AutoRefresh()
+        {
+            Timer timer = new Timer();
+            timer.Interval = (1 * 1000); //1 sec
+            timer.Tick += new EventHandler(timer1_Tick);
+            timer.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e) //After the interval, this method will be called
+        {
+            DisplayCashierQueue(QueuingForm.CashierClass.CashierQueue);
+        }
     }
 }

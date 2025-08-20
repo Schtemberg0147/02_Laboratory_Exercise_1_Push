@@ -37,7 +37,7 @@
             // positionLabel
             // 
             this.positionLabel.AutoSize = true;
-            this.positionLabel.Location = new System.Drawing.Point(496, 48);
+            this.positionLabel.Location = new System.Drawing.Point(466, 175);
             this.positionLabel.Name = "positionLabel";
             this.positionLabel.Size = new System.Drawing.Size(90, 13);
             this.positionLabel.TabIndex = 0;
@@ -46,7 +46,7 @@
             // lblQueue
             // 
             this.lblQueue.AutoSize = true;
-            this.lblQueue.Location = new System.Drawing.Point(515, 138);
+            this.lblQueue.Location = new System.Drawing.Point(466, 225);
             this.lblQueue.Name = "lblQueue";
             this.lblQueue.Size = new System.Drawing.Size(69, 13);
             this.lblQueue.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             // btnCashier
             // 
-            this.btnCashier.Location = new System.Drawing.Point(202, 43);
+            this.btnCashier.Location = new System.Drawing.Point(172, 170);
             this.btnCashier.Name = "btnCashier";
             this.btnCashier.Size = new System.Drawing.Size(75, 23);
             this.btnCashier.TabIndex = 1;
@@ -66,7 +66,7 @@
             // reminderLabel
             // 
             this.reminderLabel.AutoSize = true;
-            this.reminderLabel.Location = new System.Drawing.Point(181, 154);
+            this.reminderLabel.Location = new System.Drawing.Point(169, 225);
             this.reminderLabel.Name = "reminderLabel";
             this.reminderLabel.Size = new System.Drawing.Size(125, 13);
             this.reminderLabel.TabIndex = 0;
